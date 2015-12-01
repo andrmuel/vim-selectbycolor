@@ -1,0 +1,38 @@
+*selectbycolor.txt*  Select lines of text by their color.
+
+Author:  Andreas Müller <http://0x7.ch/>
+
+This plugin is only available if 'compatible' is not set.
+
+
+INTRODUCTION                                            *selectbycolor*
+
+selectbycolor.vim is a simple plugin that provides visual selection and
+operator objects to select lines of text by their color.
+
+
+TEXT OBJECTS                                            *selectbycolor-text-objects*
+
+The following text objects are provided:
+
+                                                        *ic* *v_ic*
+ic                      "inner color", select lines of text with the same
+                        color as the character under the cursor. The relevant
+                        character for each line is the character in the same
+                        column as the cursor.
+
+                                                        *oc* *v_oc*
+oc                      "outer color", select lines of text with the same
+                        color as the character under the cursor plus one
+                        additional line at the start and end. The relevant
+                        character for each line is the character in the same
+                        column as the cursor.
+
+
+ABOUT                                                   *selectbycolor-about*
+
+Grab the latest version or report a bug on GitHub:
+
+https://github.com/andrmuel/vim-selectbycolor
+
+ vim:tw=78:et:ft=help:norl:
